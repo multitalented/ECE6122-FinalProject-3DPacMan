@@ -13,18 +13,21 @@
 	The game relies on classes ECE_Pacman to create pac-man, ECE_Ghost to create
 	the four ghosts, and MazeLevel to create, render, and store relevant values
 	for the maze level and interaction with pac-man in gameplay
+	
 	The Pac-man game maze level space is a 190 x 220 grid, with the coordinate
 	system as follows (or 19 x 22 defined in MazeLevel class arrays)
 
 	Y
 	|
 	|_______________
-	|				|
-	|    (maze)		|
-	|				|
+	|		|
+	|    (maze)	|
+	|		|
 	|_______________|________> X
 	(0,0)
-				o   <--- initial camera location, approx.
+	
+
+	       	o   <--- initial camera location, approx.
 
 	Ghosts run in their own thread, chasing after pac-man by a vector path when normal,
 			and moving randomly when made vulnerable by pac-man consumption of power-up.
@@ -38,6 +41,7 @@
 
 	All final project requirements have been satisfied to the best of my knowledge
 			and confirmed via debugging on my local machine.
+			
 			(Only exceptions are that the ghosts do not use an actual shortest path
 			algorithm - I created one for them to use that goes after pac-man by
 			shortest x or y distance. Additionally, when pac-man is powered up,
